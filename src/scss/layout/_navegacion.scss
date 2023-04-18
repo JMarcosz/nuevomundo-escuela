@@ -1,0 +1,103 @@
+.bar-header{
+  padding: 2rem 0;
+}
+
+.inicio {
+  .bar-nav {
+    height: 35rem;
+    @include tablet {
+      height: auto;
+    }
+  }
+}
+
+.tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+
+  img {
+    display: block;
+    width: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  img:last-of-type {
+    margin: 0;
+  }
+  .menu-hamburguesa {
+    display: block;
+    @include tablet {
+      display: none;
+    }
+  }
+  .dark-boton {
+    filter: invert(100%);
+  }
+}
+
+.bar-nav {
+  img {
+    display: block;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s linear, opacity 0.4s linear, height 0.4s linear;
+  overflow: hidden;
+  a {
+    color: $blanco;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    @include tablet {
+      display: inline-block;
+      margin-right: 2rem;
+      padding: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      color: $verde;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: 25rem;
+  @include tablet {
+    height: auto;
+  }
+}
+
+
+
+.escuela {
+  font-size: 34px !important;
+  color: #fff !important;
+}

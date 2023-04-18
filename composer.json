@@ -1,0 +1,19 @@
+{
+    "name": "jeanmarte/bienesraices-web",
+    "description": "Creando proyecto con POO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean Marco",
+            "email": "jeanmarte22@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    }
+}
