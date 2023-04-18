@@ -1,2 +1,2 @@
-# bienesraices-web
-web de administración para bienes raíces
+# Web de administración estudiantil
+web de administración de estudiantes
